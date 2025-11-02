@@ -161,3 +161,38 @@
       <a href="#"><img src="youtube.png" alt="YouTube"></a>
       <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
       <a href="https://chat.whatsapp.com/KwVxpXd1RUC2KAAVFmCepI
+              <a href="https://chat.whatsapp.com/KwVxpXd1RUC2KAAVFmCepI?mode=ac_t" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>
+
+    <h4 class="mt-3">Phone Numbers</h4>
+    <ul>
+      <li>+256 757 655 557</li>
+      <li>+256 776 629 463</li>
+    </ul>
+
+    <h4 class="mt-3">Location</h4>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9050604961565!2d32.06200331526591!3d0.5297226994524934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1775c163e43743cf%3A0x4b8d0b4143518f0!2sKalamba%2C%20Uganda!5e0!3m2!1sen!2sug!4v1692570721234!5m2!1sen!2sug" 
+      width="100%" 
+      height="300" 
+      style="border:0; border-radius:12px;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p class="mb-1">&copy; <?php echo date("Y"); ?> Christ Is Love Deliverance Church • All Rights Reserved</p>
+    <p class="small mb-0">Church License &copy; 2025 • License No: CLD-UG-2025-001 • All activities authorized under Uganda Religious Bodies Regulation</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
