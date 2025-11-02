@@ -1,10 +1,4 @@
-Thanks for the reminder, SJ — here is your **complete and final `index.php` file**, with **all sections included**: Mission, Ministries, Needs, Gallery, Contact, and Footer. All image paths are updated to point to the **root folder**, so every image should be placed in the same folder as `index.php`.
 
----
-
-### ✅ Full `index.php` (Images in Root Folder, All Sections Included)
-
-```php
 <?php
 // index.php
 ?>
