@@ -8,6 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Christ Is Love Deliverance Church</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  
+<title>Christ Is Love Deliverance Church - CLDC Uganda</title>
+<meta name="description" content="Welcome to Christ Is Love Deliverance Church. Join us for worship, prayer, and community outreach in Uganda.">
+<meta name="keywords" content="CLDC, Christ Is Love Church, Uganda church, deliverance ministry, worship, prayer">
 
   <style>
     :root{
