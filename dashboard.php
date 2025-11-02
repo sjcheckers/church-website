@@ -4,8 +4,12 @@
   <!-- Left Content -->
   <div style="flex:3;">
     <!-- Existing dashboard content goes here -->
-  </div>
-
+  </div>  
+  
+<title>Christ Is Love Deliverance Church - CLDC Uganda</title>
+<meta name="description" content="Welcome to Christ Is Love Deliverance Church. Join us for worship, prayer, and community outreach in Uganda.">
+<meta name="keywords" content="CLDC, Christ Is Love Church, Uganda church, deliverance ministry, worship, prayer">
+  
   <!-- Right Sidebar -->
   <div style="flex:1; background:#f8f9fa; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
     <h4 style="font-weight:bold; color:#2c3e50;">Quick Search</h4>
