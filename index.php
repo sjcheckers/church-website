@@ -4,200 +4,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Christ Is Love Deliverance Church - CLDC Uganda</title>
-  <meta name="description" content="Welcome to Christ Is Love Deliverance Church. Join us for worship, prayer, and community outreach in Uganda.">
-  <meta name="keywords" content="CLDC, Christ Is Love Church, Uganda church, deliverance ministry, worship, prayer">
+  <title>Christ Is Love Deliverance Church (CLDC Uganda)</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
   <style>
     :root {
       --brand: #4a148c;
       --brand-2: #6a1b9a;
-      --accent: #16a085;
-      --light: #f7f7fb;
-      --text: #333;
+      --light: #faf9fd;
     }
     body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
       background: var(--light);
-      color: var(--text);
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.75;
+      color: #333;
       overflow-x: hidden;
+      scroll-behavior: smooth;
     }
-    a { text-decoration: none; }
-    a:hover { text-decoration: none; }
-
-    .topbar {
+    /* Top buttons */
+    .top-buttons {
       background: linear-gradient(90deg, var(--brand), var(--brand-2));
-      color: #fff;
-      padding: .65rem 0;
-    }
-    .brand-title { font-weight: 700; letter-spacing: .3px; }
-    .brand-logo { height: 48px; width: auto; }
-
-    .navbar-custom {
-      background: #fff;
-      box-shadow: 0 4px 12px rgba(0,0,0,.08);
-      padding: .75rem 0;
-      margin-bottom: 1rem;
-    }
-    .navbar-custom a { color: var(--brand); font-weight: 600; }
-    .navbar-custom a:hover { color: var(--brand-2); }
-
-    .hero {
-      position: relative;
-      min-height: 85vh;
-      border-radius: 16px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 10px 0;
       text-align: center;
+    }
+    .top-buttons a {
       color: #fff;
-      margin-bottom: 2rem;
+      background: rgba(255,255,255,0.15);
+      border: none;
+      border-radius: 8px;
+      padding: 8px 16px;
+      margin: 5px;
+      display: inline-block;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .top-buttons a:hover {
+      background: #fff;
+      color: var(--brand);
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 15px;
+      background: #fff;
+      margin: 15px auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      max-width: 900px;
+    }
+    section h2 {
+      text-align: center;
+      color: var(--brand);
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+    .hero {
       background: url('banner.jpg') center/cover no-repeat;
-      box-shadow: 0 10px 24px rgba(0,0,0,.15);
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      border-radius: 0;
     }
     .hero::after {
       content: "";
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.55));
+      display: block;
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 0;
     }
-    .hero > .inner { position: relative; z-index: 2; padding: 2rem; }
-    .hero h1 {
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      font-weight: 800;
-      text-shadow: 0 3px 8px rgba(0,0,0,.45);
+    .hero-content {
+      position: relative;
+      z-index: 1;
     }
-    .hero p { font-size: 1.1rem; opacity: .95; }
+    .hero h1 { font-size: 2rem; font-weight: 800; }
+    .hero p { font-size: 1.1rem; }
 
-    section.section {
-      background: #fff;
-      border-radius: 16px;
-      padding: 2rem 1.5rem;
-      margin-bottom: 1.25rem;
-      box-shadow: 0 6px 18px rgba(0,0,0,.06);
+    /* Gallery */
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
-    .section h2 { color: var(--brand); font-weight: 800; margin-bottom: 1rem; }
-    .section h4 { color: #5a2d91; font-weight: 700; margin-top: 1.5rem; }
 
-    .min-card {
-      background: #fff;
-      border: 1px solid #eee;
-      border-radius: 14px;
-      overflow: hidden;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-    .min-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(0,0,0,.08);
-    }
-    .min-card img { width: 100%; height: 180px; object-fit: cover; }
-    .min-card .p-3 h5 { color: #4a148c; font-weight: 700; }
-
-    .gal-img {
-      width: 100%; height: 210px; object-fit: cover;
-      border-radius: 12px;
-      transition: transform .25s ease;
-    }
-    .gal-img:hover { transform: scale(1.03); }
-
-    .contact-icons img { width: 32px; margin-right: .5rem; }
-
+    /* Footer */
     footer {
       background: linear-gradient(90deg, var(--brand), var(--brand-2));
       color: #fff;
-      border-radius: 14px;
-      padding: 1rem 0;
-      margin-top: 1rem;
+      text-align: center;
+      padding: 15px 10px;
+      border-radius: 12px;
+      margin-top: 20px;
     }
 
-    @media (max-width: 576px) {
-      .hero { min-height: 65vh; }
-      .hero h1 { font-size: 1.6rem; }
-      .section { padding: 1.25rem 1rem; }
-      .contact-icons img { width: 28px; }
+    @media(max-width: 576px){
+      section { padding: 40px 10px; }
+      .hero h1 { font-size: 1.5rem; }
     }
   </style>
 </head>
-
 <body>
 
-<!-- Top Header -->
-<div class="topbar">
-  <div class="container d-flex align-items-center justify-content-between flex-wrap text-center text-md-start">
-    <div class="d-flex align-items-center gap-2 mx-auto mx-md-0">
-      <img src="logo.png" alt="Logo" class="brand-logo img-fluid"/>
-      <div class="brand-title">Christ Is Love Deliverance Church</div>
-    </div>
-    <div class="small mt-2 mt-md-0">Kalamba, Kiganda, Kassanda • Central Uganda</div>
-  </div>
+<!-- Top 3 Buttons -->
+<div class="top-buttons">
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
 </div>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-custom">
-  <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon">&#9776;</span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav mx-auto text-center gap-3">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
-        <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
-        <li class="nav-item"><a class="nav-link" href="#ministries">Ministries</a></li>
-        <li class="nav-item"><a class="nav-link" href="#needs">Needs</a></li>
-        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Hero -->
+<!-- Home -->
 <section id="home" class="hero">
-  <div class="inner text-center">
-    <h1>“He who does not love does not know God, for God is love.” — 1 John 4:8</h1>
-    <p>Sharing God’s Love • Worship • Discipleship • Outreach</p>
-    <a href="#about" class="btn btn-light btn-lg mt-3">Learn About Us</a>
+  <div class="hero-content">
+    <h1>Welcome to Christ Is Love Deliverance Church</h1>
+    <p>“He who does not love does not know God, for God is love.” — 1 John 4:8</p>
   </div>
 </section>
 
-<!-- About -->
-<section id="about" class="section">
+<!-- About Us -->
+<section id="about">
   <h2>About Us</h2>
-  <p>Christ Is Love Deliverance Church (CLDC) is a community of believers dedicated to spreading the love of Christ through worship, evangelism, and service in Uganda and beyond.</p>
+  <p>Christ Is Love Deliverance Church (CLDC) is a spiritual home where believers gather to worship, grow, and serve. Our mission is to transform lives through love, deliverance, and the Word of God. We are located in Kalamba, Kiganda, Kassanda — Central Uganda.</p>
+</section>
+
+<!-- Vision -->
+<section id="vision">
+  <h2>Our Vision</h2>
+  <p>To build a Christ-centered community full of love and righteousness that impacts Uganda and the world through the gospel.</p>
+</section>
+
+<!-- Mission -->
+<section id="mission">
+  <h2>Our Mission</h2>
+  <p>To spread the message of Jesus Christ, deliver souls from bondage, and empower believers to live in holiness, unity, and love.</p>
+</section>
+
+<!-- Ministries -->
+<section id="ministries">
+  <h2>Our Ministries</h2>
+  <ul>
+    <li>Children & Youth Ministry</li>
+    <li>Women of Faith Fellowship</li>
+    <li>Men of Honor Ministry</li>
+    <li>Worship & Choir Team</li>
+    <li>Community Outreach & Evangelism</li>
+  </ul>
+</section>
+
+<!-- Needs -->
+<section id="needs">
+  <h2>Our Needs</h2>
+  <p>We are currently raising support for the following:</p>
+  <ul>
+    <li>Church building construction</li>
+    <li>Musical instruments and sound system</li>
+    <li>Support for outreach missions</li>
+    <li>Printing Bibles and Christian materials</li>
+  </ul>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="gallery">
+  <h2>Gallery</h2>
+  <div class="row g-3">
+    <div class="col-6 col-md-4"><img src="gallery1.jpg" alt="Gallery 1"></div>
+    <div class="col-6 col-md-4"><img src="gallery2.jpg" alt="Gallery 2"></div>
+    <div class="col-6 col-md-4"><img src="gallery3.jpg" alt="Gallery 3"></div>
+  </div>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="section">
+<section id="contact">
   <h2>Contact Us</h2>
-  <p>We remain committed to being a lighthouse of love, hope, and truth in Central Uganda and beyond.</p>
-
-  <h4>Connect with Us</h4>
-  <div class="d-flex flex-wrap gap-3 mt-2 contact-icons">
-    <a href="#"><img src="twitter.png" class="img-fluid" alt="Twitter"></a>
-    <a href="#"><img src="facebook.png" class="img-fluid" alt="Facebook"></a>
-    <a href="#"><img src="youtube.png" class="img-fluid" alt="YouTube"></a>
-    <a href="#"><img src="linkedin.png" class="img-fluid" alt="LinkedIn"></a>
-    <a href="https://chat.whatsapp.com/KwVxpXd1RUC2KAAVFmCepI?mode=ac_t" target="_blank">
-      <img src="whatsapp.png" class="img-fluid" alt="WhatsApp">
-    </a>
+  <p>For prayers, fellowship, or support, reach out through:</p>
+  <p><strong>Phone:</strong> +256 700 000000<br>
+     <strong>Email:</strong> info@cldcuganda.org<br>
+     <strong>Location:</strong> Kalamba, Kiganda, Kassanda, Central Uganda</p>
+  <div class="mt-3">
+    <a href="https://chat.whatsapp.com/KwVxpXd1RUC2KAAVFmCepI" target="_blank" class="btn btn-success">Join Our WhatsApp Group</a>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="text-center">
-  <div class="container">
-    <p class="mb-1">&copy; <?php echo date("Y"); ?> Christ Is Love Deliverance Church • All Rights Reserved</p>
-    <p class="small mb-0">
-      Church License &copy; 2025 • License No: CLD-UG-2025-001<br>
-      All activities authorized under Uganda Religious Bodies Regulation
-    </p>
-  </div>
+<footer>
+  <p>&copy; <?php echo date("Y"); ?> Christ Is Love Deliverance Church - All Rights Reserved</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
