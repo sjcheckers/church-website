@@ -169,20 +169,25 @@
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav mx-auto gap-3">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
-        <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
-        <li class="nav-item"><a class="nav-link" href="#ministries">Ministries</a></li>
-        <li class="nav-item"><a class="nav-link" href="#needs">Needs</a></li>
-        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php#vision">Vision</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php#mission">Mission</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php#ministries">Ministries</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php#needs">Needs</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php#contact">Contact</a></li>
+        
+        <!-- New Linked Pages -->
+        <li class="nav-item"><a class="nav-link" href="live.php">Live Sermons</a></li>
+        <li class="nav-item"><a class="nav-link" href="donate.php">Support / Donate</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="container page-wrap">
+
 
   <!-- Hero -->
   <section id="home" class="hero mb-4">
